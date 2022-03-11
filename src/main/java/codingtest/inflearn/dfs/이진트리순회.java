@@ -25,15 +25,15 @@ public class 이진트리순회 {
         DFS(root);
     }
 
-}
+    static class Node{
+        int data;
+        Node lt;
+        Node rt;
 
-class Node{
-    int data;
-    Node lt, rt;
-
-    public Node(int val){
-        data = val;
-        lt=rt=null;
+        Node(int val){
+            data = val;
+            lt=rt=null;
+        }
     }
-}
 
+}
