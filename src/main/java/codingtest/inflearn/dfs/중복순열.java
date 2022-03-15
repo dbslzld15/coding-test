@@ -17,14 +17,16 @@ public class 중복순열 {
         }
 
         for(int i=0; i<N; i++){
-            if(arr[cnt]==0){
-                arr[cnt] = i+1;
-                DFS(N, M, cnt+1);
-                arr[cnt]=0;
-            }
+            arr[cnt] = i+1;
+            DFS(N, M, cnt+1);
+
             // 또는
-            //arr[cnt] = i+1;
-            //DFS(N, M, cnt+1); 사용
+//            if(arr[cnt]==0){
+//                arr[cnt] = i+1;
+//                DFS(N, M, cnt+1);
+//                arr[cnt]=0;
+//            }
+
         }
 
     }
