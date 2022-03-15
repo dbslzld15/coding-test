@@ -10,7 +10,7 @@ public class 합이같은부분집합 {
     }
 
     public void DFS(int[] arr, int N, int level) {
-        if(level==N-1){
+        if(level==N){
             int sum1 = 0, sum2 = 0;
 
             for(int i=0; i<N; i++){
